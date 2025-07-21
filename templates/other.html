@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .message-appear {
+            animation: fadeIn 0.3s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Add styles for markdown content */
+        .markdown-content h1 { @apply text-2xl font-bold mb-4; }
+        .markdown-content h2 { @apply text-xl font-bold mb-3; }
+        .markdown-content h3 { @apply text-lg font-bold mb-2; }
+        .markdown-content ul { @apply list-disc pl-6 mb-4; }
+        .markdown-content ol { @apply list-decimal pl-6 mb-4; }
+        .markdown-content li { @apply mb-1; }
+        .markdown-content p { @apply mb-4; }
+        .markdown-content strong { @apply font-bold; }
+        .markdown-content em { @apply italic; }
+        .markdown-content code { @apply bg-gray-100 px-1 rounded; }
+        .markdown-content pre { @apply bg-gray-100 p-3 rounded mb-4; }
+    </style>
+</head>
+<body class="bg-gray-100 h-screen">
+    <div class="container mx-auto p-4 h-full flex flex-col">
+        <!-- Header -->
+        <div class="bg-white rounded-t-lg p-4 shadow-sm">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold text-gray-800">LAPTOP RECOMMENDATION</h1>
+                <div class="flex gap-2">
+                    <button id="settingsBtn" class="p-2 hover:bg-gray-100 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </button>
+                    <button id="clearBtn" class="p-2 hover:bg-gray-100 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings Panel -->
+        <div id="settingsPanel" class="hidden bg-white p-4 shadow-sm">
+            <h2 class="text-lg font-semibold mb-4">Model Settings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium">Temperature</label>
+                    <input type="range" id="temperature" min="0" max="1" step="0.1" value="0.7" class="w-full">
+                    <span id="temperatureValue" class="text-sm text-gray-600">0.7</span>
+                </div>
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium">Top P</label>
+                    <input type="range" id="top_p" min="0" max="1" step="0.05" value="0.95" class="w-full">
+                    <span id="topPValue" class="text-sm text-gray-600">0.95</span>
+                </div>
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium">Top K</label>
+                    <input type="range" id="top_k" min="1" max="100" step="1" value="40" class="w-full">
+                    <span id="topKValue" class="text-sm text-gray-600">40</span>
+                </div>
+                <div class="space-y-2">
+                    <label class="block text-sm font-medium">Repeat Penalty</label>
+                    <input type="range" id="repeat_penalty" min="1" max="2" step="0.1" value="1.1" class="w-full">
+                    <span id="repeatPenaltyValue" class="text-sm text-gray-600">1.1</span>
+                </div>
+            </div>
+            <div class="mt-4">
+                <label class="flex items-center space-x-2">
+                    <input type="checkbox" id="limitLength" class="rounded">
+                    <span class="text-sm">Limit response length</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Chat Messages -->
+        <div id="chatMessages" class="flex-1 bg-white overflow-y-auto p-4 space-y-4">
+            <!-- Messages will be inserted here -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="bg-white rounded-b-lg p-4 shadow-sm">
+            <div class="flex space-x-2">
+                <input type="text" id="messageInput" placeholder="Type your message..." 
+                       class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button id="sendBtn" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const messageInput = document.getElementById('messageInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatMessages = document.getElementById('chatMessages');
+        const settingsBtn = document.getElementById('settingsBtn');
+        const settingsPanel = document.getElementById('settingsPanel');
+        const clearBtn = document.getElementById('clearBtn');
+
+        // Model settings elements
+        const temperatureSlider = document.getElementById('temperature');
+        const topPSlider = document.getElementById('top_p');
+        const topKSlider = document.getElementById('top_k');
+        const repeatPenaltySlider = document.getElementById('repeat_penalty');
+        const limitLengthCheckbox = document.getElementById('limitLength');
+
+        // Update value displays
+        function updateValue(slider, valueSpan) {
+            document.getElementById(valueSpan).textContent = slider.value;
+        }
+
+        // Settings event listeners
+        temperatureSlider.addEventListener('input', () => updateValue(temperatureSlider, 'temperatureValue'));
+        topPSlider.addEventListener('input', () => updateValue(topPSlider, 'topPValue'));
+        topKSlider.addEventListener('input', () => updateValue(topKSlider, 'topKValue'));
+        repeatPenaltySlider.addEventListener('input', () => updateValue(repeatPenaltySlider, 'repeatPenaltyValue'));
+
+        // Toggle settings panel
+        settingsBtn.addEventListener('click', () => {
+            settingsPanel.classList.toggle('hidden');
+        });
+
+        marked.setOptions({
+            breaks: true, // Enable line breaks
+            gfm: true,    // Enable GitHub Flavored Markdown
+            pedantic: false,
+            sanitize: false,
+            smartLists: true,
+            smartypants: true
+        });
+
+        // Get current model settings
+        function getModelSettings() {
+            return {
+                temperature: parseFloat(temperatureSlider.value),
+                top_p: parseFloat(topPSlider.value),
+                top_k: parseInt(topKSlider.value),
+                repeat_penalty: parseFloat(repeatPenaltySlider.value),
+                limit_length: limitLengthCheckbox.checked
+            };
+        }
+
+        // Add message to chat
+        function addMessage(content, isUser = false) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `flex ${isUser ? 'justify-end' : 'justify-start'} message-appear`;
+            
+            const messageBubble = document.createElement('div');
+            messageBubble.className = `max-w-[70%] rounded-lg p-3 ${
+                isUser ? 'bg-blue-500 text-white' : 'bg-gray-100 text-gray-800'
+            } markdown-content`;
+            
+            // Parse markdown and set inner HTML
+            const parsedContent = marked.parse(content);
+            messageBubble.innerHTML = parsedContent;
+            
+            messageDiv.appendChild(messageBubble);
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function handleStreamResponse(response) {
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
+            let assistantMessage = '';
+            let messageDiv = null;
+
+            while (true) {
+                const { value, done } = await reader.read();
+                if (done) break;
+
+                const chunk = decoder.decode(value);
+                const lines = chunk.split('\n');
+
+                for (const line of lines) {
+                    if (line.startsWith('data: ')) {
+                        const data = line.slice(6);
+                        if (data === '[DONE]') continue;
+
+                        try {
+                            const parsed = JSON.parse(data);
+                            if (parsed.token) {
+                                assistantMessage += parsed.token;
+                                if (!messageDiv) {
+                                    messageDiv = document.createElement('div');
+                                    messageDiv.className = 'flex justify-start message-appear';
+                                    const messageBubble = document.createElement('div');
+                                    messageBubble.className = 'max-w-[70%] rounded-lg p-3 bg-gray-100 text-gray-800 markdown-content';
+                                    messageDiv.appendChild(messageBubble);
+                                    chatMessages.appendChild(messageDiv);
+                                }
+                                messageDiv.firstChild.innerHTML = marked.parse(assistantMessage);
+                                chatMessages.scrollTop = chatMessages.scrollHeight;
+                            }
+                        } catch (e) {
+                            console.error('Error parsing SSE data:', e);
+                        }
+                    }
+                }
+            }
+        }
+
+        // Handle sending messages
+        async function sendMessage() {
+            const message = messageInput.value.trim();
+            if (!message) return;
+
+            addMessage(message, true);
+            messageInput.value = '';
+
+            try {
+                const response = await fetch('/api/stream-chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        config: getModelSettings()
+                    })
+                });
+
+                await handleStreamResponse(response);
+            } catch (error) {
+                console.error('Error sending message:', error);
+                addMessage('Error: Failed to send message. Please try again.', false);
+            }
+        }
+
+        // Clear chat history
+        clearBtn.addEventListener('click', async () => {
+            try {
+                const response = await fetch('/api/clear-chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        system_prompt: 'You are a helpful AI assistant.'
+                    })
+                });
+
+                if (response.ok) {
+                    chatMessages.innerHTML = '';
+                }
+            } catch (error) {
+                console.error('Error clearing chat:', error);
+            }
+        });
+
+        // Event listeners
+        sendBtn.addEventListener('click', sendMessage);
+        messageInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    </script>
+</body>
+</html>

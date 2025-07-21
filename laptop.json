@@ -1,0 +1,112 @@
+[
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "My budget is between $500-700",
+      "output": "Based on your budget of $500-700, here are suitable laptop recommendations:\n\n1. Lenovo IdeaPad 3 ($599)\n- AMD Ryzen 5 5500U Processor\n- 8GB DDR4 RAM\n- 256GB SSD\n- 15.6\" Full HD Display\n- Integrated AMD Radeon Graphics\n- Battery Life: Up to 7 hours\n\n2. HP Pavilion 15 ($649)\n- Intel Core i5-1135G7\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD Display\n- Intel Iris Xe Graphics\n- Battery Life: Up to 8 hours\n\nThese laptops offer good performance for everyday tasks, web browsing, and light productivity work."
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Looking for gaming laptops under $1200",
+      "output": "Here are gaming laptop recommendations under $1200:\n\n1. Acer Nitro 5 ($999)\n- AMD Ryzen 7 6800H\n- NVIDIA RTX 3060 6GB\n- 16GB DDR5 RAM\n- 512GB NVMe SSD\n- 15.6\" 144Hz Full HD Display\n- Battery Life: Up to 5 hours gaming\n\n2. MSI Katana GF66 ($1099)\n- Intel Core i7-12700H\n- NVIDIA RTX 3050 Ti 4GB\n- 16GB DDR4 RAM\n- 1TB NVMe SSD\n- 15.6\" 144Hz Full HD Display\n- Battery Life: Up to 4 hours gaming\n\nBoth laptops can handle modern games at medium-high settings with good frame rates."
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Need a laptop for video editing under $1500",
+      "output": "Here are laptop recommendations for video editing under $1500:\n\n1. ASUS ROG Zephyrus G14 ($1399)\n- AMD Ryzen 9 6900HS\n- NVIDIA RTX 3060 6GB\n- 16GB DDR5 RAM\n- 1TB NVMe SSD\n- 14\" 2K 120Hz Display\n- Battery Life: Up to 10 hours\n\n2. Dell G15 ($1299)\n- Intel Core i7-12700H\n- NVIDIA RTX 3060 6GB\n- 32GB DDR4 RAM\n- 1TB NVMe SSD\n- 15.6\" Full HD 165Hz Display\n- Battery Life: Up to 6 hours\n\nThese laptops offer strong CPU performance and dedicated graphics needed for video editing."
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Need a budget laptop under $400",
+      "output": "Here are laptop recommendations under $400:\n\n1. Lenovo Chromebook Flex 5 ($329)\n- Intel Celeron N4020\n- 4GB DDR4 RAM\n- 64GB eMMC Storage\n- 13.3\" Full HD Touch Display\n- Intel UHD Graphics\n- Battery Life: Up to 10 hours\n\n2. HP Chromebook 14 ($379)\n- AMD 3015Ce\n- 4GB DDR4 RAM\n- 32GB eMMC Storage\n- 14\" HD Display\n- AMD Radeon Graphics\n- Battery Life: Up to 9 hours\n\nThese laptops are best for basic tasks like web browsing, document editing, and media consumption."
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Looking for a premium laptop around $2000",
+      "output": "Here are premium laptop recommendations around $2000:\n\n1. MacBook Pro 14\" ($1999)\n- Apple M2 Pro chip\n- 16GB Unified Memory\n- 512GB SSD\n- 14\" Liquid Retina XDR Display\n- Up to 18 hours battery life\n- ProRes acceleration\n\n2. Dell XPS 15 ($1899)\n- Intel Core i9-13900H\n- NVIDIA RTX 4060 8GB\n- 32GB DDR5 RAM\n- 1TB NVMe SSD\n- 15.6\" 4K OLED Touch Display\n- Battery Life: Up to 12 hours\n\nThese laptops offer top-tier performance, premium build quality, and excellent displays."
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "My budget is between 30000-40000",
+      "output": "Based on your budget of 30000-40000, here are suitable laptop recommendations:\n\n1. Lenovo IdeaPad 3 (35999)\n- AMD Ryzen 3 5300U\n- 8GB DDR4 RAM\n- 256GB SSD\n- 15.6\" Full HD Display\n- Integrated AMD Radeon Graphics\n- Battery Life: Up to 7 hours\n\n2. HP Pavilion 14 (38990)\n- Intel Core i3-1115G4\n- 8GB DDR4 RAM\n- 512GB SSD\n- 14\" Full HD Display\n- Intel UHD Graphics\n- Battery Life: Up to 6 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Budget 40000-50000",
+      "output": "For your budget of 40000-50000, here are the recommended laptops:\n\n1. ASUS VivoBook 15 (45990)\n- Intel Core i5-1135G7\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD Display\n- Intel Iris Xe Graphics\n- Battery Life: Up to 8 hours\n\n2. Dell Inspiron 3525 (48990)\n- AMD Ryzen 5 5500U\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD Anti-glare\n- AMD Radeon Graphics\n- Battery Life: Up to 9 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Looking for laptops between 50000-60000",
+      "output": "Here are the best laptops in the 50000-60000 range:\n\n1. HP Pavilion Gaming (54990)\n- AMD Ryzen 5 5600H\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD 144Hz\n- NVIDIA GTX 1650 4GB\n- Battery Life: Up to 6 hours\n\n2. Lenovo IdeaPad Gaming 3 (58990)\n- Intel Core i5-11300H\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD 120Hz\n- NVIDIA GTX 1650 4GB\n- Battery Life: Up to 5.5 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Budget range 60000-70000",
+      "output": "For your budget of 60000-70000, consider these laptops:\n\n1. Acer Nitro 5 (65990)\n- AMD Ryzen 5 6600H\n- 16GB DDR5 RAM\n- 512GB SSD\n- 15.6\" Full HD 144Hz\n- RTX 3050 4GB\n- Battery Life: Up to 6 hours\n\n2. MSI GF63 Thin (68990)\n- Intel Core i5-12450H\n- 16GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD 144Hz\n- RTX 3050 4GB\n- Battery Life: Up to 5 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Looking for laptops between 70000-80000",
+      "output": "Here are premium laptops in the 70000-80000 range:\n\n1. ASUS TUF Gaming F15 (75990)\n- Intel Core i7-11800H\n- 16GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD 144Hz\n- RTX 3050 Ti 4GB\n- Battery Life: Up to 6 hours\n\n2. Dell G15 Gaming (78990)\n- AMD Ryzen 7 6800H\n- 16GB DDR5 RAM\n- 512GB SSD\n- 15.6\" Full HD 120Hz\n- RTX 3050 4GB\n- Battery Life: Up to 7 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Premium laptops between 80000-90000",
+      "output": "Here are high-end laptops in the 80000-90000 range:\n\n1. Lenovo Legion 5 (84990)\n- AMD Ryzen 7 5800H\n- 16GB DDR4 RAM\n- 1TB SSD\n- 15.6\" Full HD 165Hz\n- RTX 3060 6GB\n- Battery Life: Up to 7 hours\n\n2. HP Omen 16 (88990)\n- Intel Core i7-12700H\n- 16GB DDR5 RAM\n- 512GB SSD\n- 16.1\" Full HD 144Hz\n- RTX 3060 6GB\n- Battery Life: Up to 6 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Ultra premium laptops above 90000",
+      "output": "Here are top-tier laptops above 90000:\n\n1. ASUS ROG Strix G15 (95990)\n- AMD Ryzen 9 6900HX\n- 32GB DDR5 RAM\n- 1TB NVMe SSD\n- 15.6\" QHD 165Hz\n- RTX 3070 8GB\n- Battery Life: Up to 8 hours\n\n2. MacBook Pro 14 (129900)\n- Apple M2 Pro\n- 16GB Unified Memory\n- 512GB SSD\n- 14\" Liquid Retina XDR\n- 10-core GPU\n- Battery Life: Up to 18 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Budget 25000-30000",
+      "output": "Here are budget-friendly laptops between 25000-30000:\n\n1. Lenovo IdeaPad 3i (28990)\n- Intel Celeron N4020\n- 4GB DDR4 RAM\n- 256GB SSD\n- 15.6\" HD Display\n- Intel UHD Graphics\n- Battery Life: Up to 6 hours\n\n2. ASUS VivoBook 14 (29990)\n- AMD Athlon Silver 3050U\n- 8GB DDR4 RAM\n- 256GB SSD\n- 14\" HD Display\n- AMD Radeon Graphics\n- Battery Life: Up to 6 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Student laptops under 35000",
+      "output": "Here are student-friendly laptops under 35000:\n\n1. HP Chromebook 14 (32990)\n- AMD 3015Ce\n- 4GB DDR4 RAM\n- 64GB eMMC\n- 14\" Full HD Display\n- AMD Radeon Graphics\n- Battery Life: Up to 10 hours\n\n2. Acer Aspire 3 (34990)\n- AMD Ryzen 3 3250U\n- 8GB DDR4 RAM\n- 256GB SSD\n- 15.6\" HD Display\n- AMD Radeon Graphics\n- Battery Life: Up to 7 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Video editing laptops under 85000",
+      "output": "Here are laptops suitable for video editing under 85000:\n\n1. ASUS ROG Strix G15 (82990)\n- AMD Ryzen 7 6800H\n- 16GB DDR5 RAM\n- 512GB SSD\n- 15.6\" Full HD 144Hz\n- RTX 3050 Ti 4GB\n- Battery Life: Up to 7 hours\n\n2. Acer Predator Helios 300 (84990)\n- Intel Core i7-11800H\n- 16GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD 165Hz\n- RTX 3060 6GB\n- Battery Life: Up to 6 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Business laptops between 65000-75000",
+      "output": "Here are business laptops in the 65000-75000 range:\n\n1. Dell Latitude 3520 (69990)\n- Intel Core i5-1135G7\n- 16GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD Anti-glare\n- Intel Iris Xe Graphics\n- Battery Life: Up to 10 hours\n\n2. Lenovo ThinkPad E14 (72990)\n- AMD Ryzen 5 5600U\n- 16GB DDR4 RAM\n- 512GB SSD\n- 14\" Full HD IPS\n- AMD Radeon Graphics\n- Battery Life: Up to 12 hours"
+    },
+    {
+      "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+      "input": "Programming laptops around 55000",
+      "output": "Here are laptops suitable for programming around 55000:\n\n1. Dell Inspiron 5515 (54990)\n- AMD Ryzen 5 5500U\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD Anti-glare\n- AMD Radeon Graphics\n- Battery Life: Up to 8 hours\n\n2. Lenovo IdeaPad Slim 5 (56990)\n- Intel Core i5-1135G7\n- 16GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD IPS\n- Intel Iris Xe Graphics\n- Battery Life: Up to 9 hours"
+    },
+    {
+        "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+        "input": "Programming laptops around 55000",
+        "output": "Here are laptops suitable for programming around 55000:\n\n1. Dell Inspiron 5515 (54990)\n- AMD Ryzen 5 5500U\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD Anti-glare\n- AMD Radeon Graphics\n- Battery Life: Up to 8 hours\n\n2. Lenovo IdeaPad Slim 5 (56990)\n- Intel Core i5-1135G7\n- 16GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD IPS\n- Intel Iris Xe Graphics\n- Battery Life: Up to 9 hours"
+    },
+    {
+        "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+        "input": "Programming laptops under 50000",
+        "output": "Here are laptops suitable for programming under 50000:\n\n1. HP 15s (48990)\n- AMD Ryzen 3 5300U\n- 8GB DDR4 RAM\n- 256GB SSD\n- 15.6\" Full HD Anti-glare\n- AMD Radeon Graphics\n- Battery Life: Up to 7 hours\n\n2. Acer Aspire 5 (49990)\n- Intel Core i3-1115G4\n- 8GB DDR4 RAM\n- 512GB SSD\n- 14\" Full HD IPS\n- Intel UHD Graphics\n- Battery Life: Up to 6 hours"
+    },
+    {
+        "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+        "input": "High-performance laptops for programming and gaming under 60000",
+        "output": "Here are laptops suitable for programming and gaming under 60000:\n\n1. ASUS TUF Gaming F15 (59990)\n- Intel Core i5-10300H\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD 144Hz\n- NVIDIA GeForce GTX 1650\n- Battery Life: Up to 6 hours\n\n2. Lenovo Legion Y540 (58990)\n- Intel Core i5-9300H\n- 8GB DDR4 RAM\n- 1TB HDD + 256GB SSD\n- 15.6\" Full HD IPS\n- NVIDIA GeForce GTX 1650\n- Battery Life: Up to 5 hours"
+    },
+    {
+        "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+        "input": "Lightweight laptops for programming under 45000",
+        "output": "Here are lightweight laptops suitable for programming under 45000:\n\n1. ASUS VivoBook 14 (43990)\n- AMD Ryzen 3 3250U\n- 8GB DDR4 RAM\n- 256GB SSD\n- 14\" Full HD Anti-glare\n- AMD Radeon Vega 3\n- Weight: 1.6kg\n- Battery Life: Up to 6 hours\n\n2. Lenovo IdeaPad 3 (44990)\n- Intel Core i3-1115G4\n- 8GB DDR4 RAM\n- 512GB SSD\n- 15.6\" Full HD TN\n- Intel UHD Graphics\n- Weight: 1.7kg\n- Battery Life: Up to 6 hours"
+    },
+    {
+        "instruction": "You are a personal shopping assistant specializing in laptops, using first-principle reasoning to break down user prompts into tasks—leveraging web search, coding, debugging, and automation—to provide clear, intelligent, beginner-friendly, and truthful recommendations while simplifying complex technical details.",
+        "input": "Business laptops under 55000",
+        "output": "Here are business laptops under 55000:\n\n1. HP ProBook 440 G8 (54990)\n- Intel Core i5-1135G7\n- 8GB DDR4 RAM\n- 256GB SSD\n- 14\" Full HD Anti-glare\n- Intel Iris Xe Graphics\n- Battery Life: Up to 10 hours\n\n2. Dell Vostro 3400 (52990)\n- Intel Core i5-1135G7\n- 8GB DDR4 RAM\n- 512GB SSD\n- 14\" Full HD Anti-glare\n- Intel UHD Graphics\n- Battery Life: Up to 9 hours"
+    }
+]

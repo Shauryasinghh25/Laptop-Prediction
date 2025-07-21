@@ -1,0 +1,12 @@
+2024-12-17 18:57:03,409 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-17 18:57:03,409 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-17 18:57:03,410 - werkzeug - INFO -  * Restarting with stat
+2024-12-17 18:57:03,630 - werkzeug - WARNING -  * Debugger is active!
+2024-12-17 18:57:03,633 - werkzeug - INFO -  * Debugger PIN: 123-649-452
+2024-12-17 18:57:06,824 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 18:57:06] "GET / HTTP/1.1" 200 -
+2024-12-17 18:57:20,941 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 18:57:20] "GET /?age=12&gender=Male&weight=45&height=150&health_condition=Heart+Disease&allergies=None&food_preference=Vegetarian HTTP/1.1" 200 -
+2024-12-17 18:57:28,925 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 18:57:28] "GET /?age=12&gender=Male&weight=45&height=150&health_condition=Heart+Disease&allergies=None&food_preference=Vegetarian HTTP/1.1" 200 -
+2024-12-17 18:57:29,670 - werkzeug - INFO - 127.0.0.1 - - [17/Dec/2024 18:57:29] "GET /?age=12&gender=Male&weight=45&height=150&health_condition=Heart+Disease&allergies=None&food_preference=Vegetarian HTTP/1.1" 200 -
+2024-12-17 19:00:02,881 - werkzeug - INFO -  * Detected change in 'd:\\Project Expo 1\\komal.py', reloading
+2024-12-17 19:00:02,937 - werkzeug - INFO -  * Restarting with stat
